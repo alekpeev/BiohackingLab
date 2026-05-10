@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioHacking Sound Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="logo-text">BioHacking <span class="neon-blue">Sound Lab</span>&trade;</h1>
+            <p class="subtitle">Upgrade Your Life</p>
+        </header>
+
+        <div class="calibration-zone" id="calibrationZone">
+            <div class="status-indicator yellow" id="micStatus">Изчаквам микрофон...</div>
+        </div>
+
+        <div class="karaoke-zone">
+            <div class="visualizer" id="visualizer">
+                <div class="wave"></div>
+            </div>
+            
+            <div class="prompt-text" id="promptText">
+                Твоето подсъзнание се препрограмира най-добре с твоя собствен глас. Натисни "Старт", за да започнем.
+            </div>
+            
+            <div class="timer" id="timerDisplay"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn neon-btn" id="startBtn">СТАРТ НА ЗАПИСА</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
